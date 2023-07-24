@@ -14,6 +14,13 @@ const messaging = Platform.select({
   android: () => require('@react-native-firebase/messaging').default,
 })();
 
+messaging?.()?.setBackgroundMessageHandler(async remoteMessage => {
+  if (remoteMessage?.data?.origin === 'okhi') {
+    await OkHi.onMessageReceived();
+  }
+  console.log('Message handled in the background!', remoteMessage);
+});
+
 OkHi.initialize({
   credentials: {
     branchId,
@@ -33,10 +40,4 @@ OkHi.initialize({
   .then(() => console.log('init done'))
   .catch((e: any) => console.log('Index.js ', e));
 
-messaging?.()?.setBackgroundMessageHandler(async remoteMessage => {
-  if (remoteMessage?.data?.origin === 'okhi') {
-    await OkHi.onMessageReceived();
-  }
-  console.log('Message handled in the background!', remoteMessage);
-});
 AppRegistry.registerComponent(appName, () => App);
