@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "366653661919",
+    "project_id": "okhiqa-79f05",
+    "storage_bucket": "okhiqa-79f05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366653661919:android:6d2dcead1180c550d4bf6a",
+        "android_client_info": {
+          "package_name": "com.okhiqa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366653661919-kh9tfsnka4lvri77vcgj7klf9n9cbqmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6Iqq66iBPO6qbi1nsrVSsG8vurGqk_8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366653661919-kh9tfsnka4lvri77vcgj7klf9n9cbqmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
